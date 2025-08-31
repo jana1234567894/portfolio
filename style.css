@@ -1942,3 +1942,30 @@ header nav {
     padding: 10px 18px;
   }
 }
+@media (max-width: 768px) {
+  .skills, .projects, .experience, .education {
+    display: none;
+  }
+}
+/* Make grids stack on mobile */
+@media (max-width: 768px) {
+  .skills-grid,
+  .projects-grid,
+  .timeline,
+  .achievements-grid {
+    grid-template-columns: 1fr;   /* single column */
+    flex-direction: column;       /* stack items */
+  }
+
+  .section {
+    padding: 40px 20px;           /* reduce padding */
+  }
+
+  h2.section-title {
+    font-size: 1.6rem;            /* smaller headers */
+  }
+
+  p {
+    font-size: 1rem;              /* readable text */
+  }
+}
